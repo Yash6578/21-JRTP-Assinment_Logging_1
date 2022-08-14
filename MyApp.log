@@ -1,0 +1,298 @@
+2022-08-14 10:39:50,305 [restartedMain] INFO  com.ashokit.JrtpAss1LoggerApplication              - Starting JrtpAss1LoggerApplication using Java 17.0.2 on Yash with PID 12408 (C:\Users\Yash\Documents\workspace-spring-tool-suite-4-4.14.1.RELEASE\JRTP-Ass-1-Logger\target\classes started by Yash in C:\Users\Yash\Documents\workspace-spring-tool-suite-4-4.14.1.RELEASE\JRTP-Ass-1-Logger)
+2022-08-14 10:39:50,307 [restartedMain] INFO  com.ashokit.JrtpAss1LoggerApplication              - No active profile set, falling back to 1 default profile: "default"
+2022-08-14 10:39:50,350 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-14 10:39:50,350 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-14 10:39:51,015 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-08-14 10:39:51,022 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-08-14 10:39:51,023 [restartedMain] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-08-14 10:39:51,023 [restartedMain] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-14 10:39:51,066 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-08-14 10:39:51,066 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 715 ms
+2022-08-14 10:39:51,310 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2022-08-14 10:39:51,319 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-08-14 10:39:51,335 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-14 10:39:51,342 [restartedMain] INFO  com.ashokit.JrtpAss1LoggerApplication              - Started JrtpAss1LoggerApplication in 1.299 seconds (JVM running for 2.039)
+2022-08-14 10:43:48,846 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-14 10:43:48,846 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2022-08-14 10:43:48,847 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 1 ms
+2022-08-14 10:43:48,866 [http-nio-8080-exec-1] INFO  com.ashokit.controller.ErrorController             - In Error API Logger Factory
+2022-08-14 10:43:48,869 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[/].[dispatcherServlet]              - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+java.lang.ArithmeticException: / by zero
+	at com.ashokit.controller.ErrorController.home(ErrorController.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-14 10:43:50,485 [http-nio-8080-exec-2] INFO  com.ashokit.controller.ErrorController             - In Error API Logger Factory
+2022-08-14 10:43:50,485 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[/].[dispatcherServlet]              - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+java.lang.ArithmeticException: / by zero
+	at com.ashokit.controller.ErrorController.home(ErrorController.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-14 10:43:51,279 [http-nio-8080-exec-3] INFO  com.ashokit.controller.ErrorController             - In Error API Logger Factory
+2022-08-14 10:43:51,280 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[/].[dispatcherServlet]              - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+java.lang.ArithmeticException: / by zero
+	at com.ashokit.controller.ErrorController.home(ErrorController.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-14 10:44:03,155 [http-nio-8080-exec-4] INFO  com.ashokit.controller.WelcomeController           - In Welcome API Logger Factory
+2022-08-14 10:44:07,004 [http-nio-8080-exec-5] INFO  com.ashokit.controller.WelcomeController           - In Welcome API Logger Factory
+2022-08-14 10:44:07,668 [http-nio-8080-exec-6] INFO  com.ashokit.controller.WelcomeController           - In Welcome API Logger Factory
+2022-08-14 10:44:12,560 [http-nio-8080-exec-7] INFO  com.ashokit.controller.HomeController              - In Home API Logger Factory
+2022-08-14 10:44:15,155 [http-nio-8080-exec-8] INFO  com.ashokit.controller.HomeController              - In Home API Logger Factory
+2022-08-14 10:44:15,866 [http-nio-8080-exec-9] INFO  com.ashokit.controller.HomeController              - In Home API Logger Factory
+2022-08-14 10:44:54,547 [http-nio-8080-exec-1] INFO  com.ashokit.controller.ErrorController             - In Error API Logger Factory
+2022-08-14 10:44:54,548 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[/].[dispatcherServlet]              - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+java.lang.ArithmeticException: / by zero
+	at com.ashokit.controller.ErrorController.home(ErrorController.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-14 10:51:07,781 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2022-08-14 11:00:52,701 [restartedMain] INFO  com.ashokit.JrtpAss1LoggerApplication              - Starting JrtpAss1LoggerApplication using Java 17.0.2 on Yash with PID 7628 (C:\Users\Yash\Documents\workspace-spring-tool-suite-4-4.14.1.RELEASE\JRTP-Ass-1-Logger\target\classes started by Yash in C:\Users\Yash\Documents\workspace-spring-tool-suite-4-4.14.1.RELEASE\JRTP-Ass-1-Logger)
+2022-08-14 11:00:52,705 [restartedMain] INFO  com.ashokit.JrtpAss1LoggerApplication              - No active profile set, falling back to 1 default profile: "default"
+2022-08-14 11:00:52,787 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-14 11:00:52,787 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-14 11:00:54,043 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-08-14 11:00:54,057 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-08-14 11:00:54,057 [restartedMain] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-08-14 11:00:54,058 [restartedMain] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-14 11:00:54,140 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-08-14 11:00:54,141 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1352 ms
+2022-08-14 11:00:54,578 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2022-08-14 11:00:54,594 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-08-14 11:00:54,619 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-14 11:00:54,631 [restartedMain] INFO  com.ashokit.JrtpAss1LoggerApplication              - Started JrtpAss1LoggerApplication in 2.429 seconds (JVM running for 3.656)
+2022-08-14 11:01:00,251 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2022-08-14 11:01:23,242 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ashokit.JrtpAss1LoggerApplicationTests], using SpringBootContextLoader
+2022-08-14 11:01:23,252 [main] INFO  o.s.t.c.support.AbstractContextLoader              - Could not detect default resource locations for test class [com.ashokit.JrtpAss1LoggerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-08-14 11:01:23,253 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       - Could not detect default configuration classes for test class [com.ashokit.JrtpAss1LoggerApplicationTests]: JrtpAss1LoggerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-08-14 11:01:23,402 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Found @SpringBootConfiguration com.ashokit.JrtpAss1LoggerApplication for test class com.ashokit.JrtpAss1LoggerApplicationTests
+2022-08-14 11:01:23,624 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-08-14 11:01:23,644 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@53e211ee, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@41a90fa8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3d8bbcdc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@52500920, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@117e0fe5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@18a3962d, org.springframework.test.context.event.EventPublishingTestExecutionListener@78aea4b9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2a65bb85, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4b85880b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4f936da8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4215838f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@452ba1db, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2289aca5]
+2022-08-14 11:01:24,174 [main] INFO  c.ashokit.JrtpAss1LoggerApplicationTests           - Starting JrtpAss1LoggerApplicationTests using Java 17.0.2 on Yash with PID 7456 (started by Yash in C:\Users\Yash\Documents\workspace-spring-tool-suite-4-4.14.1.RELEASE\JRTP-Ass-1-Logger)
+2022-08-14 11:01:24,177 [main] INFO  c.ashokit.JrtpAss1LoggerApplicationTests           - No active profile set, falling back to 1 default profile: "default"
+2022-08-14 11:01:26,464 [main] INFO  c.ashokit.JrtpAss1LoggerApplicationTests           - Started JrtpAss1LoggerApplicationTests in 2.749 seconds (JVM running for 4.622)
+2022-08-14 11:01:45,238 [restartedMain] INFO  com.ashokit.JrtpAss1LoggerApplication              - Starting JrtpAss1LoggerApplication using Java 17.0.2 on Yash with PID 4992 (C:\Users\Yash\Documents\workspace-spring-tool-suite-4-4.14.1.RELEASE\JRTP-Ass-1-Logger\target\classes started by Yash in C:\Users\Yash\Documents\workspace-spring-tool-suite-4-4.14.1.RELEASE\JRTP-Ass-1-Logger)
+2022-08-14 11:01:45,244 [restartedMain] INFO  com.ashokit.JrtpAss1LoggerApplication              - No active profile set, falling back to 1 default profile: "default"
+2022-08-14 11:01:45,328 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-14 11:01:45,329 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-14 11:01:46,550 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-08-14 11:01:46,564 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-08-14 11:01:46,564 [restartedMain] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-08-14 11:01:46,564 [restartedMain] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-14 11:01:46,651 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-08-14 11:01:46,652 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1322 ms
+2022-08-14 11:01:47,083 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2022-08-14 11:01:47,100 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-08-14 11:01:47,126 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-14 11:01:47,139 [restartedMain] INFO  com.ashokit.JrtpAss1LoggerApplication              - Started JrtpAss1LoggerApplication in 2.421 seconds (JVM running for 3.632)
+2022-08-14 11:02:02,313 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2022-08-14 11:22:10,951 [restartedMain] INFO  com.ashokit.JrtpAss1LoggerApplication              - Starting JrtpAss1LoggerApplication using Java 17.0.2 on Yash with PID 1440 (C:\Users\Yash\Documents\workspace-spring-tool-suite-4-4.14.1.RELEASE\JRTP-Ass-1-Logger\target\classes started by Yash in C:\Users\Yash\Documents\workspace-spring-tool-suite-4-4.14.1.RELEASE\JRTP-Ass-1-Logger)
+2022-08-14 11:22:10,955 [restartedMain] INFO  com.ashokit.JrtpAss1LoggerApplication              - No active profile set, falling back to 1 default profile: "default"
+2022-08-14 11:22:11,038 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-14 11:22:11,038 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-14 11:22:12,251 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-08-14 11:22:12,263 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-08-14 11:22:12,264 [restartedMain] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-08-14 11:22:12,264 [restartedMain] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-14 11:22:12,337 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-08-14 11:22:12,338 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1299 ms
+2022-08-14 11:22:12,761 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                 - LiveReload server is running on port 35729
+2022-08-14 11:22:12,781 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-08-14 11:22:12,808 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-14 11:22:12,821 [restartedMain] INFO  com.ashokit.JrtpAss1LoggerApplication              - Started JrtpAss1LoggerApplication in 2.386 seconds (JVM running for 3.585)
+2022-08-14 11:22:22,872 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-14 11:22:22,872 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2022-08-14 11:22:22,872 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 0 ms
+2022-08-14 11:22:22,904 [http-nio-8080-exec-1] INFO  com.ashokit.controller.HomeController              - In Home API Logger Factory
+2022-08-14 11:22:52,648 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
